@@ -29,8 +29,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/wayne/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/xiaomi/wayne/proprietary/etc/calib.cfg:system/etc/calib.cfg \
     vendor/xiaomi/wayne/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
-    vendor/xiaomi/wayne/proprietary/vendor/etc/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf \
-    vendor/xiaomi/wayne/proprietary/vendor/etc/perf/perf-profile1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile1.conf \
     vendor/xiaomi/wayne/proprietary/vendor/firmware/goodixfp.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.b00 \
     vendor/xiaomi/wayne/proprietary/vendor/firmware/goodixfp.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.b01 \
     vendor/xiaomi/wayne/proprietary/vendor/firmware/goodixfp.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.b02 \
@@ -40,7 +38,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/wayne/proprietary/vendor/firmware/goodixfp.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.b06 \
     vendor/xiaomi/wayne/proprietary/vendor/firmware/goodixfp.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.b07 \
     vendor/xiaomi/wayne/proprietary/vendor/firmware/goodixfp.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.mdt \
-	vendor/xiaomi/wayne/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.0-service.rc \
     vendor/xiaomi/wayne/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
     vendor/xiaomi/wayne/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/xiaomi/wayne/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
@@ -64,8 +61,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/wayne/proprietary/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar:system/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar \
     vendor/xiaomi/wayne/proprietary/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar:system/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar \
     vendor/xiaomi/wayne/proprietary/framework/com.qualcomm.qti.uceservice-V2.0-java.jar:system/framework/com.qualcomm.qti.uceservice-V2.0-java.jar \
-    vendor/xiaomi/wayne/proprietary/vendor/framework/com.fingerprints.extension.jar:$(TARGET_COPY_OUT_VENDOR)/framework/com.fingerprints.extension.jar \
-    vendor/xiaomi/wayne/proprietary/vendor/etc/permissions/com.fingerprints.extension.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.fingerprints.extension.xml \
     vendor/xiaomi/wayne/proprietary/framework/com.quicinc.cne.api-V1.0-java.jar:system/framework/com.quicinc.cne.api-V1.0-java.jar \
     vendor/xiaomi/wayne/proprietary/framework/com.quicinc.cne.api-V1.1-java.jar:system/framework/com.quicinc.cne.api-V1.1-java.jar \
     vendor/xiaomi/wayne/proprietary/framework/com.quicinc.cne.constants-V1.0-java.jar:system/framework/com.quicinc.cne.constants-V1.0-java.jar \
@@ -199,7 +194,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/wayne/proprietary/lib64/vendor.qti.hardware.qteeconnector@1.0.so:system/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/xiaomi/wayne/proprietary/lib64/vendor.qti.hardware.tui_comm@1.0.so:system/lib64/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/xiaomi/wayne/proprietary/lib64/vendor.qti.hardware.vpp@1.1.so:system/lib64/vendor.qti.hardware.vpp@1.1.so \
-	vendor/xiaomi/wayne/proprietary/vendor/lib64/libmlipay.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmlipay.so \
     vendor/xiaomi/wayne/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/xiaomi/wayne/proprietary/vendor/bin/DR_AP_Service:$(TARGET_COPY_OUT_VENDOR)/bin/DR_AP_Service \
     vendor/xiaomi/wayne/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
@@ -208,7 +202,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/wayne/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
     vendor/xiaomi/wayne/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
     vendor/xiaomi/wayne/proprietary/vendor/bin/energy-awareness:$(TARGET_COPY_OUT_VENDOR)/bin/energy-awareness \
-	vendor/xiaomi/wayne/proprietary/vendor/bin/mlipayd:$(TARGET_COPY_OUT_VENDOR)/bin/mlipayd \
     vendor/xiaomi/wayne/proprietary/vendor/bin/fm_qsoc_patches:$(TARGET_COPY_OUT_VENDOR)/bin/fm_qsoc_patches \
     vendor/xiaomi/wayne/proprietary/vendor/bin/garden_app:$(TARGET_COPY_OUT_VENDOR)/bin/garden_app \
     vendor/xiaomi/wayne/proprietary/vendor/bin/hci_qcomm_init:$(TARGET_COPY_OUT_VENDOR)/bin/hci_qcomm_init \
@@ -1410,5 +1403,4 @@ PRODUCT_PACKAGES += \
     TimeService \
     colorservice \
     com.qti.snapdragon.sdk.display \
-    FingerprintExtensionService \
     chargeonlymode
